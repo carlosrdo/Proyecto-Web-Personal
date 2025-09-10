@@ -22,7 +22,7 @@
     </nav>
 
     <!-- Header Section -->
-    <header class="header" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1516387938699-a93567ec168e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80');">
+    <header class="header contacto">
         <div class="header-content">
             <h1>Contacto</h1>
             <p>¡Hablemos sobre tu próximo proyecto!</p>
@@ -44,10 +44,10 @@
         </section>
 
         <section class="section">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+            <div class="contact-grid">
                 <!-- Contact Form -->
                 <div>
-                    <h3 style="margin-bottom: 2rem; color: #2c3e50;">Envíame un Mensaje</h3>
+                    <h3 class="contact-section-title">Envíame un Mensaje</h3>
                     <form class="contact-form">
                         <div class="form-group">
                             <label for="nombre">Nombre Completo</label>
@@ -82,23 +82,23 @@
 
                 <!-- Contact Information -->
                 <div>
-                    <h3 style="margin-bottom: 2rem; color: #2c3e50;">Información de Contacto</h3>
+                    <h3 class="contact-section-title">Información de Contacto</h3>
                     
-                    <div class="portfolio-item" style="margin-bottom: 2rem;">
+                    <div class="portfolio-item contact-info-item">
                         <div class="portfolio-item-content">
                             <h3><i class="fas fa-envelope"></i> Email</h3>
                             <p>contacto@miwebpersonal.com</p>
                         </div>
                     </div>
 
-                    <div class="portfolio-item" style="margin-bottom: 2rem;">
+                    <div class="portfolio-item contact-info-item">
                         <div class="portfolio-item-content">
                             <h3><i class="fas fa-phone"></i> Teléfono</h3>
                             <p>+34 123 456 789</p>
                         </div>
                     </div>
 
-                    <div class="portfolio-item" style="margin-bottom: 2rem;">
+                    <div class="portfolio-item contact-info-item">
                         <div class="portfolio-item-content">
                             <h3><i class="fas fa-map-marker-alt"></i> Ubicación</h3>
                             <p>Madrid, España</p>
@@ -123,7 +123,7 @@
                     <div class="portfolio-item-content">
                         <h3><i class="fab fa-linkedin"></i> LinkedIn</h3>
                         <p>Conecta conmigo en LinkedIn para ver mi experiencia profesional y networking.</p>
-                        <a href="#" class="btn" style="display: inline-block; margin-top: 1rem;">Ver Perfil</a>
+                        <a href="#" class="btn secondary">Ver Perfil</a>
                     </div>
                 </div>
 
@@ -131,7 +131,7 @@
                     <div class="portfolio-item-content">
                         <h3><i class="fab fa-github"></i> GitHub</h3>
                         <p>Revisa mi código y proyectos open source en mi perfil de GitHub.</p>
-                        <a href="#" class="btn" style="display: inline-block; margin-top: 1rem;">Ver Repositorios</a>
+                        <a href="#" class="btn secondary">Ver Repositorios</a>
                     </div>
                 </div>
 
@@ -139,7 +139,7 @@
                     <div class="portfolio-item-content">
                         <h3><i class="fab fa-twitter"></i> Twitter</h3>
                         <p>Sígueme en Twitter para estar al día con las últimas tendencias en desarrollo web.</p>
-                        <a href="#" class="btn" style="display: inline-block; margin-top: 1rem;">Seguir</a>
+                        <a href="#" class="btn secondary">Seguir</a>
                     </div>
                 </div>
             </div>
@@ -147,7 +147,7 @@
 
         <section class="section">
             <h2>Preguntas Frecuentes</h2>
-            <div style="text-align: left;">
+            <div class="faq-section">
                 <p><strong>¿Cuánto tiempo tarda en responder?</strong><br>
                 Normalmente respondo a todos los mensajes dentro de las primeras 24 horas.</p>
 
@@ -178,6 +178,7 @@
         </div>
     </footer>
 
+    <script src="../styles/script.js"></script>
     <script>
         // Simple form validation and submission
         document.querySelector('.contact-form').addEventListener('submit', function(e) {
